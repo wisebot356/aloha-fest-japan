@@ -1,0 +1,4 @@
+__pycache__/
+tally-live-form.json
+*.zip
+.DS_Store
