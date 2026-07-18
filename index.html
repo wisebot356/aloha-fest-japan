@@ -1,154 +1,183 @@
-1|<!doctype html>
-2|<html lang="ja">
-3|<head>
-4|  <meta charset="utf-8" />
-5|  <meta name="viewport" content="width=device-width, initial-scale=1" />
-6|  <meta name="description" content="アロハ・フェスト出店者募集プレビュー" />
-7|  <title>Aloha Fest — 出店者募集</title>
-8|  <link rel="preconnect" href="https://fonts.googleapis.com" />
-9|  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-10|  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet" />
-11|  <link rel="stylesheet" href="styles.css?v=2" />
-12|</head>
-13|<body>
-14|  <div class="sun-glow" aria-hidden="true"></div>
-15|  <header class="topbar">
-16|    <a class="brand" href="#top" aria-label="Aloha Fest home">
-17|      <img src="logo.svg" alt="Aloha Fest logo" />
-18|      <span>ALOHA FEST</span>
-19|    </a>
-20|    <a class="top-cta" href="#vendor-form">出店のご相談 <span>↗</span></a>
-21|  </header>
-22|
-23|  <main id="top">
-24|    <section class="hero" aria-labelledby="hero-title">
-25|      <div class="hero-copy">
-26|        <p class="eyebrow"><span class="spark">✦</span> HAWAI‘I × JAPAN × OUR TOWN</p>
-27|        <h1 id="hero-title"><span class="aloha">Aloha</span><br />が、まちに<br /><em>やってくる。</em></h1>
-28|        <p class="hero-lead">おいしいものを分け合って、笑顔であいさつして、
-29|          <strong>「はじめまして」から、あたたかなつながりを。</strong></p>
-30|        <div class="hero-actions">
-31|          <a class="button primary" href="#vendor-form">出店に興味があります <span>↓</span></a>
-32|          <a class="button ghost" href="#about">アロハ・フェストって？</a>
-33|        </div>
-34|        <p class="small-note">出店のご相談・ご質問だけでも大歓迎です。</p>
-35|      </div>
-36|      <div class="hero-art" aria-label="Aloha Fest illustration">
-37|        <div class="sun">ALOHA<br /><small>HERE</small></div>
-38|        <div class="mountain mountain-back"></div>
-39|        <div class="mountain mountain-front"></div>
-40|        <div class="wave wave-one"></div>
-41|        <div class="wave wave-two"></div>
-42|        <div class="palm palm-left">♠</div>
-43|        <div class="palm palm-right">♠</div>
-44|        <div class="hibiscus h-one">✿</div>
-45|        <div class="hibiscus h-two">✿</div>
-46|        <div class="hero-stamp">ONE DAY<br />OF WARMTH<br /><b>AND WONDER</b></div>
-47|      </div>
-48|    </section>
-49|
-50|    <section class="marquee" aria-label="Festival values">
-51|      <div>WELCOME &nbsp;•&nbsp; SHARE A TASTE &nbsp;•&nbsp; MEET YOUR NEIGHBORS &nbsp;•&nbsp; ALOHA SPIRIT &nbsp;•&nbsp; WELCOME &nbsp;•&nbsp; SHARE A TASTE &nbsp;•&nbsp; MEET YOUR NEIGHBORS &nbsp;•&nbsp;</div>
-52|    </section>
-53|
-54|    <section class="story" id="about">
-55|      <div class="section-label">WHAT WE’RE MAKING</div>
-56|      <div class="story-grid">
-57|        <h2>ただのイベント<br />ではなく、<br /><em>出会いの一日。</em></h2>
-58|        <div class="story-copy">
-59|          <p><b>アロハ</b>は、ハワイで交わすあいさつ以上のもの。相手を大切に思い、分かち合い、心を開いて出会う文化です。</p>
-60|          <p>ハワイ・ノースショアにつながる私たち家族と仲間が、今暮らしているこの地域で、日本のまちのあたたかさとハワイのアロハを出会わせたいと考えています。</p>
-61|          <p>地域のお店、つくり手、表現者のみなさんと一緒に、<strong>食べて、話して、笑って、また会いたくなる</strong>一日をつくりたいです。</p>
-62|        </div>
-63|      </div>
-64|    </section>
-65|
-66|    <section class="experience" aria-labelledby="experience-title">
-67|      <div class="section-label light">THE FEELING</div>
-68|      <h2 id="experience-title">「いらっしゃいませ」に、<br /><em>もう少しアロハを。</em></h2>
-69|      <div class="experience-cards">
-70|        <article>
-71|          <span class="card-number">01</span>
-72|          <span class="card-icon">◒</span>
-73|          <h3>まず、味見。</h3>
-74|          <p>小さなサンプルから始まる会話。おいしさは、初対面を近づけてくれます。</p>
-75|        </article>
-76|        <article>
-77|          <span class="card-number">02</span>
-78|          <span class="card-icon">〰</span>
-79|          <h3>目を見て、あいさつ。</h3>
-80|          <p>急がず、ちゃんと出会う。お客さまが「また来たい」と感じる空気を大切にします。</p>
-81|        </article>
-82|        <article>
-83|          <span class="card-number">03</span>
-84|          <span class="card-icon">✦</span>
-85|          <h3>地域で、祝う。</h3>
-86|          <p>ハワイと日本の魅力を持ち寄って、このまちだけの新しい思い出をつくります。</p>
-87|        </article>
-88|      </div>
-89|    </section>
-90|
-91|    <section class="vendors" aria-labelledby="vendor-title">
-92|      <div class="vendor-intro">
-93|        <p class="section-label">CALLING LOCAL MAKERS</p>
-94|        <h2 id="vendor-title">あなたのお店にも、<br /><em>アロハの席を。</em></h2>
-95|        <p>食べもの、飲みもの、手づくり、アート、体験、音楽。<br />「地域の人に会いたい」という気持ちがあれば、ぜひご一緒に。</p>
-96|      </div>
-97|      <div class="vendor-list" role="list">
-98|        <div role="listitem"><span>01</span><b>Food & Drink</b><small>フード・ドリンク</small></div>
-99|        <div role="listitem"><span>02</span><b>Craft & Art</b><small>クラフト・アート</small></div>
-100|        <div role="listitem"><span>03</span><b>Local Shop</b><small>地域のお店・サービス</small></div>
-101|        <div role="listitem"><span>04</span><b>Music & Play</b><small>音楽・体験・あそび</small></div>
-102|      </div>
-103|    </section>
-104|
-105|    <section class="form-section" id="vendor-form" aria-labelledby="form-title">
-106|      <div class="form-side">
-107|        <p class="section-label light">VENDOR INTEREST</p>
-108|        <h2 id="form-title">一緒に<br /><em>やりませんか？</em></h2>
-109|        <p>正式なお申し込み前の、気軽なご相談フォームです。<br />今ここでお声がけいただいても大丈夫です。</p>
-110|        <div class="family-note">
-111|          <span>♡</span>
-112|          <p><b>From our family to this town.</b><br />ハワイのアロハを、地域のみなさんと一緒に育てたいです。</p>
-113|        </div>
-114|      </div>
-115|
-116|      <div class="interest-form live-form" id="vendor-form">
-        <p class="mini-eyebrow">VENDOR INTEREST FORM</p>
-        <h3>まずは、<br />気軽にアロハ。</h3>
-        <p>出店の確定ではありません。<br />「ちょっと気になる」「話を聞いてみたい」だけでも大歓迎です。</p>
-        <a class="live-form-cta" href="https://tally.so/r/lb9DD5" target="_blank" rel="noopener">出店について聞いてみる <span>→</span></a>
-        <p class="form-footnote">1分ほどの簡単なフォームです。日本語でどうぞ。</p>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="アロハ・フェスト出店者募集プレビュー" />
+  <title>Aloha Fest — 出店者募集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+  <div class="sun-glow" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Aloha Fest home">
+      <img src="logo.svg" alt="Aloha Fest logo" />
+      <span>ALOHA FEST</span>
+    </a>
+    <a class="top-cta" href="#vendor-form">出店のご相談 <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="spark">✦</span> HAWAI‘I × JAPAN × OUR TOWN</p>
+        <h1 id="hero-title"><span class="aloha">Aloha</span><br />が、まちに<br /><em>やってくる。</em></h1>
+        <p class="hero-lead">おいしいものを分け合って、笑顔であいさつして、
+          <strong>「はじめまして」から、あたたかなつながりを。</strong></p>
+        <div class="hero-actions">
+          <a class="button primary" href="#vendor-form">出店に興味があります <span>↓</span></a>
+          <a class="button ghost" href="#about">アロハ・フェストって？</a>
+        </div>
+        <p class="small-note">出店のご相談・ご質問だけでも大歓迎です。</p>
       </div>
-159|      <div class="success" id="success" aria-live="polite" hidden>
-160|        <span>✿</span>
-161|        <h3>Mahalo!</h3>
-162|        <p>ご興味をありがとうございます。<br />公開版では、ここからご連絡を受け取れるようにします。</p>
-163|        <button type="button" id="reset-form">戻る</button>
-164|      </div>
-165|    </section>
-166|
-167|    <section class="qr-preview" aria-label="QR code preview">
-168|      <div>
-169|        <p class="section-label">QR LANDING PAGE</p>
-170|        <h2>この画面を、<br /><em>お店の方へ。</em></h2>
-171|        <p>公開前のプレビュー用QRです。<br />あなたのOK後、実際にスマホで開けるQRへ切り替えます。</p>
-172|      </div>
-173|      <div class="qr-card">
-174|        <img src="qr-preview.svg" alt="Preview QR code placeholder" />
-175|        <b>PREVIEW ONLY</b>
-176|        <small>公開前 — まだ配布しないでください</small>
-177|      </div>
-178|    </section>
-179|  </main>
-180|
-181|  <footer>
-182|    <img src="logo.svg" alt="" />
-183|    <p>ALOHA FEST — A little Hawai‘i. A lot of heart.</p>
-184|    <small>Preview concept · Japan community edition</small>
-185|  </footer>
-186|
-187|  <script src="app.js"></script>
-188|</body>
-189|</html>
-190|
+      <div class="hero-art" aria-label="Aloha Fest illustration">
+        <div class="sun">ALOHA<br /><small>HERE</small></div>
+        <div class="mountain mountain-back"></div>
+        <div class="mountain mountain-front"></div>
+        <div class="wave wave-one"></div>
+        <div class="wave wave-two"></div>
+        <div class="palm palm-left">♠</div>
+        <div class="palm palm-right">♠</div>
+        <div class="hibiscus h-one">✿</div>
+        <div class="hibiscus h-two">✿</div>
+        <div class="hero-stamp">ONE DAY<br />OF WARMTH<br /><b>AND WONDER</b></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Festival values">
+      <div>WELCOME &nbsp;•&nbsp; SHARE A TASTE &nbsp;•&nbsp; MEET YOUR NEIGHBORS &nbsp;•&nbsp; ALOHA SPIRIT &nbsp;•&nbsp; WELCOME &nbsp;•&nbsp; SHARE A TASTE &nbsp;•&nbsp; MEET YOUR NEIGHBORS &nbsp;•&nbsp;</div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="section-label">WHAT WE’RE MAKING</div>
+      <div class="story-grid">
+        <h2>ただのイベント<br />ではなく、<br /><em>出会いの一日。</em></h2>
+        <div class="story-copy">
+          <p><b>アロハ</b>は、ハワイで交わすあいさつ以上のもの。相手を大切に思い、分かち合い、心を開いて出会う文化です。</p>
+          <p>ハワイ・ノースショアにつながる私たち家族と仲間が、今暮らしているこの地域で、日本のまちのあたたかさとハワイのアロハを出会わせたいと考えています。</p>
+          <p>地域のお店、つくり手、表現者のみなさんと一緒に、<strong>食べて、話して、笑って、また会いたくなる</strong>一日をつくりたいです。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" aria-labelledby="experience-title">
+      <div class="section-label light">THE FEELING</div>
+      <h2 id="experience-title">「いらっしゃいませ」に、<br /><em>もう少しアロハを。</em></h2>
+      <div class="experience-cards">
+        <article>
+          <span class="card-number">01</span>
+          <span class="card-icon">◒</span>
+          <h3>まず、味見。</h3>
+          <p>小さなサンプルから始まる会話。おいしさは、初対面を近づけてくれます。</p>
+        </article>
+        <article>
+          <span class="card-number">02</span>
+          <span class="card-icon">〰</span>
+          <h3>目を見て、あいさつ。</h3>
+          <p>急がず、ちゃんと出会う。お客さまが「また来たい」と感じる空気を大切にします。</p>
+        </article>
+        <article>
+          <span class="card-number">03</span>
+          <span class="card-icon">✦</span>
+          <h3>地域で、祝う。</h3>
+          <p>ハワイと日本の魅力を持ち寄って、このまちだけの新しい思い出をつくります。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="vendors" aria-labelledby="vendor-title">
+      <div class="vendor-intro">
+        <p class="section-label">CALLING LOCAL MAKERS</p>
+        <h2 id="vendor-title">あなたのお店にも、<br /><em>アロハの席を。</em></h2>
+        <p>食べもの、飲みもの、手づくり、アート、体験、音楽。<br />「地域の人に会いたい」という気持ちがあれば、ぜひご一緒に。</p>
+      </div>
+      <div class="vendor-list" role="list">
+        <div role="listitem"><span>01</span><b>Food & Drink</b><small>フード・ドリンク</small></div>
+        <div role="listitem"><span>02</span><b>Craft & Art</b><small>クラフト・アート</small></div>
+        <div role="listitem"><span>03</span><b>Local Shop</b><small>地域のお店・サービス</small></div>
+        <div role="listitem"><span>04</span><b>Music & Play</b><small>音楽・体験・あそび</small></div>
+      </div>
+    </section>
+
+    <section class="form-section" id="vendor-form" aria-labelledby="form-title">
+      <div class="form-side">
+        <p class="section-label light">VENDOR INTEREST</p>
+        <h2 id="form-title">一緒に<br /><em>やりませんか？</em></h2>
+        <p>正式なお申し込み前の、気軽なご相談フォームです。<br />今ここでお声がけいただいても大丈夫です。</p>
+        <div class="family-note">
+          <span>♡</span>
+          <p><b>From our family to this town.</b><br />ハワイのアロハを、地域のみなさんと一緒に育てたいです。</p>
+        </div>
+      </div>
+
+      <form class="interest-form" id="vendor-form" action="https://formsubmit.co/thekingzconsult@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Aloha Fest — 新しい出店者からのご相談" />
+        <input type="hidden" name="_next" value="https://wisebot356.github.io/aloha-fest-japan/thanks.html" />
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="honeypot" aria-hidden="true" />
+        <div class="field-group">
+          <label for="business">お店・活動のお名前 <span>必須</span></label>
+          <input id="business" name="business_name" autocomplete="organization" placeholder="例：〇〇カフェ" required />
+        </div>
+        <div class="two-col">
+          <div class="field-group">
+            <label for="contact">ご担当者さま <span>必須</span></label>
+            <input id="contact" name="contact_name" autocomplete="name" placeholder="お名前" required />
+          </div>
+          <div class="field-group">
+            <label for="contact-method">連絡先 <span>必須</span></label>
+            <input id="contact-method" name="contact_method" placeholder="電話・メール・Instagram・LINEなど" required />
+          </div>
+        </div>
+        <div class="field-group">
+          <label for="category">出店・参加のイメージ</label>
+          <select id="category" name="category">
+            <option value="">選んでください</option>
+            <option>フード・スイーツ</option><option>ドリンク</option><option>クラフト・アート</option>
+            <option>地域のお店・サービス</option><option>音楽・パフォーマンス</option>
+            <option>体験・ワークショップ</option><option>まだ決めていない／まず話したい</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label>いまのお気持ちは？ <span>必須</span></label>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="interest_level" value="ぜひ詳しく聞きたい" required /> <span>ぜひ詳しく聞きたい</span></label>
+            <label class="choice"><input type="radio" name="interest_level" value="出店を前向きに検討したい" /> <span>出店を前向きに検討したい</span></label>
+            <label class="choice"><input type="radio" name="interest_level" value="まずは相談したい" /> <span>まずは相談したい</span></label>
+          </div>
+        </div>
+        <div class="field-group">
+          <label for="idea">こんなことができそう／聞いてみたいこと</label>
+          <textarea id="idea" name="message" rows="3" placeholder="自由にどうぞ。空欄でも大丈夫です。"></textarea>
+        </div>
+        <button class="submit" type="submit">アロハ・フェストについて聞きたい <span>→</span></button>
+        <a class="line-share" href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fwisebot356.github.io%2Faloha-fest-japan%2F&text=%E3%82%A2%E3%83%AD%E3%83%8F%E3%83%BB%E3%83%95%E3%82%A7%E3%82%B9%E3%83%88%E3%81%AE%E5%87%BA%E5%BA%97%E8%80%85%E5%8B%9F%E9%9B%86" target="_blank" rel="noopener">LINEでこのイベントを共有する <span>↗</span></a>
+        <p class="form-footnote">送信内容は、主催チームのビジネスメールに届きます。</p>
+      </form>
+    </section>
+
+    <section class="qr-preview" aria-label="QR code preview">
+      <div>
+        <p class="section-label">QR LANDING PAGE</p>
+        <h2>この画面を、<br /><em>お店の方へ。</em></h2>
+<p>スマホで読み取ると、アロハ・フェストのご案内と<br />出店についてのご相談ページを開けます。</p>
+</div>
+<div class="qr-card">
+<img src="aloha-fest-live-qr.svg" alt="Aloha Fest vendor interest QR code" />
+<b>SCAN TO LEARN MORE</b>
+<small>スマホで読み取って、出店のご相談へ</small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="logo.svg" alt="" />
+    <p>ALOHA FEST — A little Hawai‘i. A lot of heart.</p>
+    <small>Preview concept · Japan community edition</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
